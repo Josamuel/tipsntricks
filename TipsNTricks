@@ -1,0 +1,9 @@
+
+# useful command for pushing a repo under a different username than the globally configured one on the computer
+git push https://[user]:[password]@github.com/[user]/[projectname].git
+
+# creates the upstream branch on the account as well
+git push --set-upstream https://[user]:[password]@github.com/[user]/[projectname].git
+
+# lists all files and directories hidden or unhidden
+ls -a 
