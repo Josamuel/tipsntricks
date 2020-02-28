@@ -1,9 +1,19 @@
 
-# useful command for pushing a repo under a different username than the globally configured one on the computer
-git push https://[user]:[password]@github.com/[user]/[projectname].git
+    1. # useful command for pushing a repo under a different username than the globally configured one on the computer
+        git push https://[user]:[password]@github.com/[user]/[projectname].git
 
-# creates the upstream branch on the account as well
-git push --set-upstream https://[user]:[password]@github.com/[user]/[projectname].git
+    2. # better than above, if you are cloning a repo you want associated with one account that's not your main account
+        # saved in the keychain on your machine, instead of using the suggested git clone command in github you should specify
+        # the user, then github just asks for your password for that user and your done.
 
-# lists all files and directories hidden or unhidden
-ls -a 
+        # so instead of 
+        git clone https://github.com/Josamuel/joey-blog.git
+
+        # you should write this, which specifies that I want this repo associated with the github account josamuel
+        git clone https://josamuel@github.com/josamuel/joey-blog
+
+    3. # creates the upstream branch on the account as well
+        git push --set-upstream https://[user]:[password]@github.com/[user]/[projectname].git
+
+    4. # lists all files and directories hidden or unhidden
+        ls -a 
